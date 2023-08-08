@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "poetry-tutorial-project"
+version = "0.1.0"
+description = "prints helloworld"
+authors = ["kumar <kumar.gampa@colostate.edu>"]
+maintainers = ["Srikanth Kumar <srikanthkumargampa@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "homepageurl"
+repository = "repourl"
+documentation = "doc"
+keywords = ["Poetry", "Tutorial", "Packages"]
+packages = [{include = "poetry_tutorial_project"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+[tool.poetry.build]
+generate-setup-file = false
+script = "my_script.py"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+#[tool.poetry.scripts]
+#my-script = "my_script.py"
+
